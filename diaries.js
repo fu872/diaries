@@ -1,8 +1,7 @@
-// ↓【おまじない】HTMLの読み込みがすべて完了してからJSを実行する命令
 document.addEventListener('DOMContentLoaded', () => {
 
     // ==========================================
-    // A. 今日の日付を表示する処理（今のコードのまま）
+    // A. 今日の日付を表示する処理
     // ==========================================
     // 1. パソコンやスマホの時計から今日の日付をゲットする
     const now = new Date();
@@ -21,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     // ==========================================
-    // B. 【追加】共通のサイドバーを読み込む処理
+    // B. 共通のサイドバーを読み込む処理
     // ==========================================
     const sidebarContainer = document.getElementById('sidebar-container');
     if (sidebarContainer) {
@@ -41,4 +40,4 @@ document.addEventListener('DOMContentLoaded', () => {
             });
     }
 
-}); // ← おまじないの閉じカッコ
+});
